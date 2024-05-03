@@ -7,7 +7,7 @@ import random
 fake = Faker('es_ES')
 
 def generate_fake_users(count=10):
-    with app.app_context():  # Activa el contexto de la aplicación Flask
+    with app.app_context():  # Activa el contexto de la aplicación Flas
         for _ in range(count):
             user = User(username=fake.user_name(), 
                         usertype=random.choice(['Alumno', 'Compañía']), 
