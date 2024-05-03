@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block content %}
+<body>
+    <div class="row justify-content-center">
+    <div class="col-md-7 col-lg-5">
+    <div class="login-wrap p-4 p-md-5">
+    <h1>CV/Resume</h1>
+    <br>
+    <iframe src="{{ url_for('static', filename=cv) }}" width="150%" height="800px"></iframe>
+    <br>
+    <br>
+    </div>
+    </div>
+    </div>
+</body>
+{% endblock %}
